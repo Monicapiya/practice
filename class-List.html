@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Class-List</title>
+    <style>
+
+.classlist-Prac{
+        background-color: rgb(220, 219, 216);
+        color: black;
+        padding: 8px 30px;
+        border: none;
+        border-radius: 5px;
+        font-family: arial;
+        font-size: 17px;
+        cursor: pointer;
+       
+    }
+      .white-button{
+        background-color: rgb(6, 6, 4);
+        color: rgb(251, 251, 251);
+      }
+
+
+    </style>
+   
+  </head>
+  <body>
+    <button class="classlist-Prac js-button" onclick="classlistLesson();" >Gaming</button>
+
+  </body>
+
+    <script>
+    
+      function classlistLesson (){
+        let  button = document.querySelector('.js-button');
+
+        if(!button.classList.contains('.white-button')) {
+           button.classList.add('.white-button');
+        }
+             else {
+            
+             button.classList.remove('.white-button');
+        }
+
+        }
+      
+
+    </script>
+ 
+</html>
